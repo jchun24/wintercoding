@@ -45,4 +45,60 @@ Aggregate analysis & finding relationships between variables
 
 This plot is not as helpful since there are some outliers that affect the graph significantly. If there are 45,000 counts, it is likely to have outliers anyways. 
 
+Week 2 Work log 
+
+Before diving into other data analysis, watched very useful lecture on R from MIT open courseware - 52min video - 1hr
+![Screenshot 2023-12-11 at 3 17 14 PM](https://github.com/jchun24/wintercoding/assets/152927282/aba3e869-36af-4a8d-acc8-5522922dcf37)
+
+Some great insights on data analysis operation both in java and R. 
+Focused on the cluster analysis part from 15min. to approx. 30 min.
+
+From Stackoverflow and open AI, figured out that k-means clustering is the most common method for cluster analysis. 
+
+Trying out the cluster analysis on R - 1hr 30min. 
+
+Again, the CRAN mirror error appeared - not sure what this is. 
+
+![Screenshot 2023-12-11 at 3 23 15 PM](https://github.com/jchun24/wintercoding/assets/152927282/6d52c8d2-ba5f-4664-92a5-07e0243fc973)
+
+Also, some of the variables are categorical, so the code shows this error for not showing numerical values.
+
+![Screenshot 2023-12-11 at 3 25 25 PM](https://github.com/jchun24/wintercoding/assets/152927282/2887c7db-9dd0-40a2-9e12-57f18acec5fe)
+
+
+![Screenshot 2023-12-11 at 3 26 41 PM](https://github.com/jchun24/wintercoding/assets/152927282/24e07d8d-f3f4-43a1-9425-e115f7b01b7c)
+
+Realized that cluster sample does not work in this case. 
+First, went back to some basic EDA, explanatory data analysis. 
+For class and mode, they are not quantitative variables, so it just shows character.
+
+![Screenshot 2023-12-11 at 3 28 53 PM](https://github.com/jchun24/wintercoding/assets/152927282/544e0f3b-106a-4d0a-ad0a-e53d07038838)
+
+1hr 30min. - Sun Dec 10 
+
+library(ggplot2)
+
+warnings()
+
+meteorites$year <- as.Date(meteorites$year)
+
+ggplot(meteorites, aes(x = year)) + geom_histogram(binwidth = 365)
+
+Initial code for the given time span, but could not only do the first 50. (idk why) 
+
+![Screenshot 2023-12-11 at 3 39 26 PM](https://github.com/jchun24/wintercoding/assets/152927282/728f50ba-788e-466e-b847-49c313908e1c)
+
+Buch of errors this week, needed a successful code. 
+
+Monday 
+
+ANOVA test 
+This is one of the significance test I learned during summer college session at CMU, the one way analysis of variance test fit for multiple categorical variables. 
+ANOVA test was built-in on R, so just used aoa function to perform it. 
+
+![Screenshot 2023-12-11 at 3 52 58 PM](https://github.com/jchun24/wintercoding/assets/152927282/d528088b-d02a-40c0-8910-a33abb978f9f)
+
+Degree of freedom for the residuals is extremely large, so it may not be a useful number to use as a conclusion. 
+
+Will continue work on other features on R, and potentially a good tool for this dataset and other datasets as well. 
 

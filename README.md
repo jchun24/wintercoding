@@ -107,4 +107,25 @@ Wed Dec 13 Worklog
 1 hour of good coding work for study hall 
 
 
+Explored new dataset: global warming 
+Thought that this one is more applicable to the current world situation 
+
+![Screenshot 2023-12-13 at 11 30 41 PM](https://github.com/jchun24/wintercoding/assets/152927282/f737b8ac-af1e-4e9c-868a-a2729d51efab)
+
+Tried the overall summary statistics 
+
+![Screenshot 2023-12-13 at 11 34 21 PM](https://github.com/jchun24/wintercoding/assets/152927282/22663fb1-93bd-47d0-9255-c58e6e1aa179)
+
+It's basically the difference of temp. between each year based on the previous year.
+
+Wondered if the average temperature increased more during summer than that of during winter. 
+Visual plot for comparison
+
+![Screenshot 2023-12-13 at 11 39 28 PM](https://github.com/jchun24/wintercoding/assets/152927282/6415a21a-a36c-4003-a779-7c6ef5b72318)
+
+Well, shows a linear trend with almost no outliers, meaning they increased by a small amount consistently regardless of the season. 
+
+![Screenshot 2023-12-13 at 11 40 45 PM](https://github.com/jchun24/wintercoding/assets/152927282/069f985d-a601-4a62-b677-78d88c871112)
+
+One of the debugging problem - need to figure out how to set the range of the dataset for grouping analysis as a visual representation. Perhaps I will try that during winter break. 
 

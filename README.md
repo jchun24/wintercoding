@@ -102,3 +102,9 @@ Degree of freedom for the residuals is extremely large, so it may not be a usefu
 
 Will continue work on other features on R, and potentially a good tool for this dataset and other datasets as well. 
 
+Wed Dec 13 Worklog 
+
+1 hour of good coding work for study hall 
+
+
+

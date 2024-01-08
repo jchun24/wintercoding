@@ -104,7 +104,7 @@ Will continue work on other features on R, and potentially a good tool for this 
 
 Wed Dec 13 Worklog 
 
-1 hour of good coding work for study hall 
+1 hour 30 min of good coding work for study hall 
 
 
 Explored new dataset: global warming 
@@ -128,4 +128,26 @@ Well, shows a linear trend with almost no outliers, meaning they increased by a 
 ![Screenshot 2023-12-13 at 11 40 45 PM](https://github.com/jchun24/wintercoding/assets/152927282/069f985d-a601-4a62-b677-78d88c871112)
 
 One of the debugging problem - need to figure out how to set the range of the dataset for grouping analysis as a visual representation. Perhaps I will try that during winter break. 
+
+Jan 7 Sun Worklog
+
+Back with coding work, continue on R progress
+
+Grouping analysis for the same dataset 
+Tried asking GPT-4 for feedback that I could not solve before break 
+
+![Screenshot 2024-01-08 at 3 36 08 PM](https://github.com/jchun24/wintercoding/assets/152927282/737d3298-5893-4c67-9437-da252f9e373c)
+
+Used data.table this time to my code 
+
+![Screenshot 2024-01-08 at 3 38 45 PM](https://github.com/jchun24/wintercoding/assets/152927282/23c2c050-6c34-4215-af0f-275b144ceabf)
+
+Seemed like there is no dplyr package installed (weird because I have been consistently using it)
+Upgraded pip and installed it 
+
+![Screenshot 2024-01-08 at 4 01 49 PM](https://github.com/jchun24/wintercoding/assets/152927282/189de2fb-78a1-47ca-ae65-65a1ccc459ab)
+
+Task is to solve this cran mirror problem soon enough
+
+![Screenshot 2024-01-08 at 4 06 03 PM](https://github.com/jchun24/wintercoding/assets/152927282/c8ade1a7-e4a1-4828-9658-b3b647a39794)
 

@@ -151,3 +151,55 @@ Task is to solve this cran mirror problem soon enough
 
 ![Screenshot 2024-01-08 at 4 06 03 PM](https://github.com/jchun24/wintercoding/assets/152927282/c8ade1a7-e4a1-4828-9658-b3b647a39794)
 
+# Jan 11 Worklog 
+
+Finally downloaded the packages for linear graphs and significance tests - 1 hr and 30min
+
+![Screenshot 2024-01-16 at 6 37 53 PM](https://github.com/jchun24/wintercoding/assets/152927282/20d20db5-0e6f-4ee6-bb86-de91913a671f)
+
+Also installed ggplot2 (new version) successfully 
+
+![Screenshot 2024-01-16 at 6 39 26 PM](https://github.com/jchun24/wintercoding/assets/152927282/eeefaf58-ee04-4bcb-8c59-4789033a7299)
+
+Began to get deeper into visual representation and regression model - thought it would be great to have some useful graphs and tables that shows relationships between variables
+
+Asked GPT-4 model for some suggestions 
+Learned tidyverse and scattplot as a new tool 
+
+![Screenshot 2024-01-16 at 6 46 06 PM](https://github.com/jchun24/wintercoding/assets/152927282/f32e5efa-1905-40ae-aa4f-716748910aa0)
+
+Error with the code while debugging 
+
+![Screenshot 2024-01-16 at 6 50 42 PM](https://github.com/jchun24/wintercoding/assets/152927282/9b964609-a8e5-43bf-aa03-3bb4cb443ad1)
+
+Used conflicted package 
+
+![Screenshot 2024-01-16 at 6 58 56 PM](https://github.com/jchun24/wintercoding/assets/152927282/1909150b-2e8a-4af0-bdb6-21258c2b8f64)
+
+From the linear regression line, 
+geom_smooth(method = "lm", se = FALSE, color = "red"),
+by this code the scatterplot should have the regression line, but doesn't seem to work. 
+
+![Screenshot 2024-01-16 at 7 12 47 PM](https://github.com/jchun24/wintercoding/assets/152927282/a12ad261-7362-424c-898d-bea2d1e5c062)
+
+# Jan 15 
+Made use of Stackoverflow for the regression line and got it. - 2hrs
+
+![Screenshot 2024-01-16 at 7 16 12 PM](https://github.com/jchun24/wintercoding/assets/152927282/c3ad902f-14b1-48b6-b1ad-879fbfe6131d)
+
+Then, GPT suggested me with a bar graph that compares the yearly average, but bar graph was much harder than scatterplot. 
+
+Had error with the data itself, where there was no marking for "month" in the column. 
+![Screenshot 2024-01-16 at 7 22 41 PM](https://github.com/jchun24/wintercoding/assets/152927282/2d336e65-aa2f-48f2-9835-6af1d7be95ca)
+
+Baciscally, cannot label the variables. 
+
+![Screenshot 2024-01-16 at 7 22 51 PM](https://github.com/jchun24/wintercoding/assets/152927282/f26573c7-76eb-4170-b1e0-d59ab92040b8)
+
+So, spent the last 30 mins watching how to label a known dataset 
+
+![Screenshot 2024-01-16 at 7 25 06 PM](https://github.com/jchun24/wintercoding/assets/152927282/f5db375f-282c-4e44-bc1d-02c459f03551)
+
+
+
+

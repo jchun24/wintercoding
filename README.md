@@ -200,6 +200,43 @@ So, spent the last 30 mins watching how to label a known dataset
 
 ![Screenshot 2024-01-16 at 7 25 06 PM](https://github.com/jchun24/wintercoding/assets/152927282/f5db375f-282c-4e44-bc1d-02c459f03551)
 
+# Week 4
 
+Jan 20 Brainstorm 
+Fall, I went over some basic concepts for R and data science. 
+For winter, for those who already saw my presentation, I should give more information on utilizing R. 
+Cluster analysis and regression analysis can be a good idea, so I will continue to work on them.  
 
+Bar graph analysis method - 2 hrs 
+Downloaded reshape2 
 
+![Screenshot 2024-01-22 at 4 42 09 PM](https://github.com/jchun24/wintercoding/assets/152927282/52f7a95e-ca14-439f-9fad-8dbb6102a9da)
+
+Ran into this error 
+
+![Screenshot 2024-01-22 at 4 55 02 PM](https://github.com/jchun24/wintercoding/assets/152927282/164bf40d-c442-4253-a557-e609f8f91413)
+
+Data frame (df) issue 
+Perhaps I need to change the dataset because it's not friendly at all... 
+
+![Screenshot 2024-01-22 at 5 02 51 PM](https://github.com/jchun24/wintercoding/assets/152927282/521f9cd8-6638-4e71-a305-5b87368c8b97)
+
+This format is not good for any code. 
+Went back to the meteorites dataset and continued working on the bar graph. 
+
+library(ggplot2)
+
+meteorites <- read.csv("meteorites.csv")
+
+meteorite_counts <- table(meteorites$name_type)
+
+meteorite_counts_df <- as.data.frame(meteorite_counts)
+names(meteorite_counts_df) <- c('Type', 'Count')
+
+ggplot(meteorite_counts_df, aes(x = Type, y = Count)) + 
+    geom_bar(stat = 'identity', fill = 'steelblue') + 
+    theme_minimal() +
+    labs(title = 'Meteorite Counts by Type', x = 'Type', y = 'Count') +
+    theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+Hope to see good results for the showcase in following weeks.

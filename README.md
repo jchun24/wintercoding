@@ -240,3 +240,44 @@ ggplot(meteorite_counts_df, aes(x = Type, y = Count)) +
     theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
 Hope to see good results for the showcase in following weeks.
+
+Week 5 Work
+
+Last week until long winter weekend - seemed like I have learned enough methods for data analysis, so I should immediately begin findning a good dataset that actually works.
+Because meteorites and global warming was from a random dataset website, the format of the file was not fit for code. Perhaps built-in dataset in R would make more sense for application. 
+
+![Screenshot 2024-01-28 at 9 30 43 PM](https://github.com/jchun24/wintercoding/assets/152927282/0b05b44d-818b-4937-99df-cb52013520b5)
+
+List of widely known dataset that is formatted well. 
+
+Thanks to selva86 in Github. 
+![Screenshot 2024-01-28 at 9 33 47 PM](https://github.com/jchun24/wintercoding/assets/152927282/a51a0820-3752-4b07-8849-d896ee59cda7)
+
+![Screenshot 2024-01-28 at 9 41 13 PM](https://github.com/jchun24/wintercoding/assets/152927282/2efca670-428d-43df-a926-ab78293b2c9e)
+
+Seems like the dataset is in the correct file. 
+
+ggplot(Boston, aes(x = rm, y = medv)) +
+  geom_point() +
+  labs(x = "Rooms",
+       y = "Median Value")
+Simple (not simple) visual plot for finding relationship (using ggplot2)
+
+![Screenshot 2024-01-28 at 9 50 25 PM](https://github.com/jchun24/wintercoding/assets/152927282/a9f45bf4-d315-479d-aae0-e5f2e2766fa0)
+
+Got help from https://stackoverflow.com/questions/70668409/looking-for-a-way-to-plot-a-pairwise-scatterplot-matrix-where-variables-are-in-t 
+for pairwise plot and its t test analysis. 
+
+![Screenshot 2024-01-28 at 9 54 44 PM](https://github.com/jchun24/wintercoding/assets/152927282/9991b217-8923-4ec9-84be-6d77f61426a0)
+
+Next week, I may try this ggplot method 
+library(ggplot2)
+
+df <- tidyr::pivot_longer(iris, c(Petal.Length, Petal.Width), 
+                          names_to = "petal_metric", values_to = "petal_value")
+df <- tidyr::pivot_longer(df, c(Sepal.Length, Sepal.Width),
+                          names_to = "sepal_metric", values_to = "sepal_value") 
+
+![Screenshot 2024-01-28 at 9 59 07 PM](https://github.com/jchun24/wintercoding/assets/152927282/fb52a128-5c03-4632-adf4-b3b40104e7c9)
+
+![Screenshot 2024-01-28 at 9 58 30 PM](https://github.com/jchun24/wintercoding/assets/152927282/5ebb737e-9d38-4b32-aa21-daaf435ba417)

@@ -281,3 +281,59 @@ df <- tidyr::pivot_longer(df, c(Sepal.Length, Sepal.Width),
 ![Screenshot 2024-01-28 at 9 59 07 PM](https://github.com/jchun24/wintercoding/assets/152927282/fb52a128-5c03-4632-adf4-b3b40104e7c9)
 
 ![Screenshot 2024-01-28 at 9 58 30 PM](https://github.com/jchun24/wintercoding/assets/152927282/5ebb737e-9d38-4b32-aa21-daaf435ba417)
+
+Presentation Proposal + Brainstorming 
+
+Figured out that it would be nice to show some real-world applications of R to the advanced students. 
+Using some methods in statistical analysis, present a few that is cool and informative. 
+
+1. The linear relationship graph for meteorites dataset
+
+![Screenshot 2024-02-12 at 4 51 48 PM](https://github.com/jchun24/wintercoding/assets/152927282/d24f2e42-938c-41f5-9f2a-07067764a458)
+
+2. Linear regression for global warming dataset
+
+![Screenshot 2024-02-12 at 4 53 13 PM](https://github.com/jchun24/wintercoding/assets/152927282/fe19cd06-eb23-48db-b5db-787d0d810827)
+
+3. Boston Housing dataset and how to import a built-in dataset in R library
+
+![Screenshot 2024-02-12 at 4 53 56 PM](https://github.com/jchun24/wintercoding/assets/152927282/fd84535c-d18d-4f3d-9bd1-e272b9e0d35b)
+
+In addition, going through the details in the code will help students to understand which commands produce the outputs just like a python code. 
+Some background explanation on those three dataset would also be a good part of the presentation. 
+
+This is the list of variables in Boston housing dataset for reference: 
+CRIM: Per capita crime rate by town
+ZN: Proportion of residential land zoned for lots over 25,000 sq. ft
+INDUS: Proportion of non-retail business acres per town
+CHAS: Charles River dummy variable (= 1 if tract bounds river; 0 otherwise)
+NOX: Nitric oxide concentration (parts per 10 million)
+RM: Average number of rooms per dwelling
+AGE: Proportion of owner-occupied units built prior to 1940
+DIS: Weighted distances to five Boston employment centers
+RAD: Index of accessibility to radial highways
+TAX: Full-value property tax rate per $10,000
+PTRATIO: Pupil-teacher ratio by town
+B: 1000(Bk — 0.63)², where Bk is the proportion of [people of African American descent] by town
+LSTAT: Percentage of lower status of the population
+MEDV: Median value of owner-occupied homes in $1000s
+
+Only going to focus on few of them. 
+
+Representation of correlation matrix using corrplot 
+
+library(MASS)    
+library(corrplot) 
+data(Boston)
+cor_matrix <- cor(Boston)
+
+corrplot(cor_matrix, method = "color", type = "upper", tl.col = "black", tl.srt = 45, 
+         cl.lim = c(-2, 2))
+The argument is set to show only the upper triangle matrix of the correlation matrix. 
+The only difference is that there is text lables and color limits similar to doing it in html. 
+The result is: 
+
+![Screenshot 2024-02-12 at 5 22 58 PM](https://github.com/jchun24/wintercoding/assets/152927282/eda14177-0237-420c-b360-1746354825da)
+
+Explaining what this kind of a heatmap actually means will be important. 
+Until next week, I need to figure out how to only use certain variables. 

@@ -337,3 +337,19 @@ The result is:
 
 Explaining what this kind of a heatmap actually means will be important. 
 Until next week, I need to figure out how to only use certain variables. 
+
+# Reflection
+
+To describe the winter term coding, I would say it was more challenging than fall term, because of the winter class and athletic schedule. 
+Also, I had to learn and apply all of the statistic and R skills into real world dataset, which was difficult. 
+For dataset that is not in the R library, the format is weird so even if the code is correct, it may not produce the intended results. 
+However, for Boston housing or mtcars (fall work), they are already formatted well so as long as the code is correct, it plots and produces graphs and tables well.) 
+That is part of why I chose the Boston Housing, because I wanted to show the correlation matrix to the students. 
+
+Even this part of uploading the dataset for the corrplot, meteorites and globalwarming had debugging issues right away, which I couldn't reformat it. 
+
+<img width="251" alt="Screenshot 2024-02-23 at 2 31 54 PM" src="https://github.com/jchun24/wintercoding/assets/152927282/66135dad-1fee-45fe-8a2f-54531e6f70c3">
+
+I would say this was the greatest challenge, but I somehow managed to solve it by choosing a different dataset. 
+For the spring term, I want to continue using the methods in R that I have learned so far to extract a meaningful result and conclusion either for the Pomfret community, or smaller community. 
+I will plan and brainstorm some ideas during the break. 
